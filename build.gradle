@@ -28,7 +28,7 @@ buildscript {
 repositories {
 	mavenCentral()
 	maven { url "http://nexus.hc.to/content/repositories/pub_releases" }
-	maven { url "https://ci.ender.zone/plugin/repository/everything/" }
+	maven { url "http://repo.ess3.net/content/groups/essentials" }
 	maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
 	maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 	maven { url "http://repo.mikeprimm.com/" }
@@ -49,12 +49,21 @@ dependencies {
 	compileOnly group: "com.github.ben-manes.caffeine", name: "caffeine", version: "2.5.5"
 	compile     group: "org.jasypt", name: "jasypt", version: "1.9.2"
 	
-	compileOnly group: "org.spigotmc", name: "spigot-api", version: "1.16.1-R0.1-SNAPSHOT";	
+	compileOnly group: "org.spigotmc", name: "spigot-api", version: "1.12.1-R0.1-SNAPSHOT";	
 	
+<<<<<<< HEAD
 	compileOnly group: "net.milkbowl.vault", name: "VaultAPI", version: "1.7";
 
 	compileOnly group: "net.ess3", name: "EssentialsX", version: "2.17.2";
 	compileOnly group: "net.ess3", name: "EssentialsXChat", version: "2.17.2";
+=======
+	compileOnly group: "net.milkbowl.vault", name: "VaultAPI", version: "1.6";
+	compileOnly group: "com.sk89q", name: "worldguard", version: "6.1.1-SNAPSHOT";
+
+	compileOnly group: "com.sk89q.worldedit", name: "worldedit-bukkit", version: "6.1.1-SNAPSHOT";
+	compileOnly group: "net.ess3", name: "Essentials", version: "2.13-SNAPSHOT";
+	compileOnly group: "net.ess3", name: "EssentialsChat", version: "2.13-SNAPSHOT";
+>>>>>>> parent of 886f13f7... Update build.gradle
 
 	compileOnly group: "be.maximvdw", name: "MVdWPlaceholderAPI", version: "1.0.2-SNAPSHOT";
 	compileOnly group: "me.clip", name: "placeholderapi", version: "2.8.2";
